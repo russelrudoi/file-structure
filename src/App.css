@@ -17,6 +17,37 @@ body {
   border-right: 1px solid #30363d;
 }
 
+.breadcrumbs {
+  min-height: 32px;
+  margin-bottom: 12px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: #8b949e;
+  font-size: 14px;
+}
+
+.breadcrumbs a {
+  color: #c9d1d9;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: #58a6ff;
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb-separator {
+  color: #6e7681;
+}
+
 .tree-list {
   margin: 0;
   padding: 0;
@@ -52,6 +83,12 @@ body {
   position: relative;
 }
 
+.node-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .folder-row:has(.arrow.open) {
   background: #21262d;
 }
@@ -71,6 +108,28 @@ body {
 
 .arrow.open {
   transform: rotate(90deg);
+}
+
+.open-folder-button {
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #8b949e;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.open-folder-button:hover {
+  background: #30363d;
+  color: #c9d1d9;
 }
 
 .folder-icon {
