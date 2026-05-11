@@ -54,6 +54,53 @@ body {
   list-style: none;
 }
 
+.status-message {
+  margin: 8px 10px 0;
+  padding: 14px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #161b22;
+  color: #8b949e;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.status-message p {
+  margin: 0;
+}
+
+.status-message strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #f0f6fc;
+  font-size: 15px;
+}
+
+.loading-spinner {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  border: 2px solid #30363d;
+  border-top-color: #58a6ff;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: -4px;
+  animation: spin 0.8s linear infinite;
+}
+
+.error-message {
+  border-color: #8e3535;
+  background: #1f1518;
+  color: #d0a8a8;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .tree-item {
   list-style: none;
 }
